@@ -22,3 +22,12 @@
     width: 2.16rem;
     height: 0.69rem;
 }
+.img-contain-logo{
+	display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.78rem;
+    bottom: 1.2rem;
+    width: 1.56rem;
+    height: 1.59rem;
+}
