@@ -31,3 +31,52 @@
     width: 1.56rem;
     height: 1.59rem;
 }
+
+.down-btn{
+	cursor: pointer;
+	position: absolute;
+	top: 7rem;
+	left: 50%;
+    margin-left: -1.695rem;
+    width: 3.39rem;
+    -webkit-animation-name: scaleDraw;
+	/*关键帧名称*/
+	-webkit-animation-timing-function: ease-in-out;
+	/*动画的速度曲线*/
+	-webkit-animation-iteration-count: infinite;
+	/*动画播放的次数*/
+	-webkit-animation-duration: .6s;
+	/*动画所花费的时间*/
+	animation-name: scaleDraw;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: .6s;
+}
+
+@keyframes scaleDraw {
+	/*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0% {
+		transform: scale(1);
+		/*开始为原始大小*/
+	}
+	25% {
+		transform: scale(1.1);
+		/*放大1.1倍*/
+	}
+	50% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1.1);
+	}
+}
+
+.img-contain.fixed-box{
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	bottom: 1rem;
+	left: 50%;
+	width: 4.35rem;
+	margin-left: -2.175rem;
+}
